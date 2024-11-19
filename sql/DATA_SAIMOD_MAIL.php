@@ -1,7 +1,7 @@
 <?php
 namespace SQL;
 class DATA_SAIMOD_MAIL extends \SYSTEM\DB\QI {
-    public static function get_class(){return \get_class();}
+    public static function get_class(){return static::class;}
     public static function files_mysql(){
         return array(   (new \PSAI('/saimod_mail/sql/mysql/schema_email_account.sql'))->SERVERPATH(),
                         (new \PSAI('/saimod_mail/sql/mysql/schema_contact.sql'))->SERVERPATH(),

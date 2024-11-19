@@ -2,7 +2,7 @@
 namespace SQL;
 
 class CONTACTS_COUNT extends \SYSTEM\DB\QP {
-    public static function get_class(){return \get_class();}
+    public static function get_class(){return static::class;}
     public static function mysql(){return
 'SELECT COUNT(*) as `count` FROM contact WHERE
 ( contact.email LIKE ? OR
